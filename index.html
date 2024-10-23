@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>المركز الطبي</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">المركز <span>الطبي</span></a>
+        <div class='bx bx-menu' id="menu_icon"></div>
+        <ul class="navbar">
+            <li> <a href="#home">الرئيسية</a></li>
+            <li> <a href="#services">الخدمات</a></li>
+            <li> <a href="#about">من نحن</a></li>
+            <li> <a href="#appointment">حجز موعد</a></li>
+            <li> <a href="#review">آراء المرضى</a></li>
+        </ul>
+        <div class="top_btn">
+            <a href="#" class="nav_btn">احجز الآن</a>
+        </div>
+    </header>
+
+    <!-- Section Home -->
+    <section class="home" id="home">
+        <div class="home_content" data-aos="zoom-in">
+            <h3>مرحبا بكم في</h3>
+            <h1>المركز الطبي</h1>
+            <h3> <span class="multiple_text"></span></h3>
+            <p>نقدم خدمات طبية شاملة واحترافية لضمان صحة وسلامة مرضانا.</p>
+            <a href="#appointment" class="btn">احجز موعدك</a>    
+        </div>
+        <div class="home_img" data-aos="zoom-in">
+            <img src="images/medicalImage.png" alt="صورة المركز الطبي">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading" data-aos="zoom-in-down">خدماتنا <span>الطبية</span></h2>
+        <div class="services_content" data-aos="zoom-in-up">
+            <div class="row">
+                <img src="images/service1.jpg" alt="">
+                <h4>طب الأطفال</h4>
+                <p>رعاية شاملة للأطفال وحديثي الولادة.</p>
+            </div>
+            <div class="row">
+                <img src="images/service2.jpg" alt="">
+                <h4>طب النساء والتوليد</h4>
+                <p>رعاية صحية للنساء الحوامل وخدمات الولادة.</p>
+            </div>
+            <div class="row">
+                <img src="images/service3.jpg" alt="">
+                <h4>جراحة العظام</h4>
+                <p>تشخيص وعلاج الإصابات العظمية والمفاصل.</p>
+            </div>
+            <div class="row">
+                <img src="images/service1.jpg" alt="">
+                <h4> تجميل</h4>
+                <p>تجميل البشرة ,تجميل اسنان, ليزر</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact and Appointment Section -->
+    <section class="appointment" id="appointment" >
+        <div class="about_img" data-aos="zoom-in-down">
+        <h2 class="heading" zoom-in-up>حجز <span>موعد</span></h2>
+        <form id="appointment-form">
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <input type="date" name="date" required>
+            <button type="submit">احجز الآن</button>
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+        </form>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <p class="copyright">
+            &copy; جميع الحقوق محفوظة للمركز الطبي
+        </p>
+    </footer>
+    <head>
+        <!-- مكتبة reCAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:300,
+        duration:1400,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
